@@ -8,9 +8,11 @@ public class LessonFirst extends Page {
         String url = "http://google.com";
         String searchSelector = "//*[@id=\"lst-ib\"]";
         String searchQuery = "Hello World";
-            connect(url);
-            fillForm(searchSelector,searchQuery);
-            fillForm(searchSelector, String.valueOf(Keys.ENTER));
+
+        connect(url);
+        fillForm(searchSelector,searchQuery);
+        fillForm(searchSelector, String.valueOf(Keys.ENTER));
+
         System.out.println("Hello World");
     }
 }

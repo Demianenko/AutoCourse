@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://D://AutoCourse/AutoCourse.iml" filepath="D://AutoCourse/AutoCourse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AutoCourse.iml" filepath="$PROJECT_DIR$/AutoCourse.iml" />
     </modules>
   </component>
 </project>

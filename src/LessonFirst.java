@@ -7,7 +7,7 @@ public class LessonFirst extends Page {
     public static void main(String[] args) {
         String url = "http://google.com";
         String searchSelector = "//*[@id=\"lst-ib\"]";
-        String searchQuery = "Hello World";
+        String searchQuery = "Hello      World";
 
         connect(url);
         fillForm(searchSelector,searchQuery);

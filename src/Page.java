@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * Created by user on 18.05.2016.
  */
 public class Page {
-    private static int implicitlyWait = 120;
+    private static int implicitlyWait = 110;
     private static int sleep = 500;
     private static int timeToWaitAjax = 100000;
     public static WebDriver wd = new ChromeDriver();

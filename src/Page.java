@@ -1,5 +1,6 @@
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -8,10 +9,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * Created by user on 18.05.2016.
  */
 public class Page {
+
     private static int implicitlyWait = 120;
     private static int sleep = 500;
     private static int timeToWaitAjax = 100000;
-    public static WebDriver wd = new ChromeDriver();
+    protected static WebDriver wd = new FirefoxDriver();
     private static void waiting(By selector) {
         new WebDriverWait(wd,implicitlyWait).until(ExpectedConditions.elementToBeClickable(selector));
     }

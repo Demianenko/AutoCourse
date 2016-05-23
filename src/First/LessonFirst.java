@@ -1,3 +1,6 @@
+package First;
+
+import Main.Page;
 import org.openqa.selenium.Keys;
 
 /**
@@ -9,9 +12,9 @@ public class LessonFirst extends Page {
         String searchSelector = "//*[@id=\"lst-ib\"]";
         String searchQuery = "Hello World";
 
-        connect(url);
-        fillForm(searchSelector,searchQuery);
-        fillForm(searchSelector, String.valueOf(Keys.ENTER));
+        Page.connect(url);
+        Page.fillForm(searchSelector,searchQuery);
+        Page.fillForm(searchSelector, String.valueOf(Keys.ENTER));
 
         System.out.println("Hello World");
     }

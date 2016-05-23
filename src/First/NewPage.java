@@ -1,8 +1,5 @@
-package site;
+package First;
 
-/**
- * Created by sega on 20.05.16.
- */
 public class NewPage {
     private String url;
     int numberOf;

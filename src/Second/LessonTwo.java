@@ -23,6 +23,11 @@ public class LessonTwo {
         p1.spendMoney(10);
         System.out.println(p1.getWealth());
 
+        Integer a = 1128;
+        Integer b = 1128;
+
+        System.out.println(1==1);
+
 
     }
 }

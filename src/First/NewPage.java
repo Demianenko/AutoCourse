@@ -2,7 +2,7 @@ package First;
 
 public class NewPage {
     private String url;
-    int numberOf;
+    Integer numberOf;
     String title;
 
     public String getUrl() {
@@ -19,6 +19,15 @@ public class NewPage {
 
     public String getTitle() {
         return title;
+    }
+
+    public NewPage(String url, String title, int numberOf) {
+        this.url = url;
+        this.title = title;
+        this.numberOf = numberOf;
+    }
+
+    public NewPage() {
     }
 
     public void setNumberOf(int numberOf) {

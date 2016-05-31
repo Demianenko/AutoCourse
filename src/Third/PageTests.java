@@ -1,4 +1,4 @@
-package Test;
+package Third;
 import First.NewPage;
 import org.testng.annotations.*;
 import org.testng.Assert;

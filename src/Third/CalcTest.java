@@ -3,9 +3,6 @@ package Third;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-/**
- * Created by user on 31.05.2016.
- */
 public class CalcTest {
     double one = 1;
     double minusOne = -1;

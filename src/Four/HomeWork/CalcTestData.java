@@ -12,6 +12,9 @@ import java.util.ArrayList;
 public class CalcTestData {
     private static String addressPlus = "https://raw.githubusercontent.com/Demianenko/AutoCourse/master/src/DataPlus";
     private static String addressMinus = "https://raw.githubusercontent.com/Demianenko/AutoCourse/master/src/DataPlus";
+    private static String addressMulti = "https://raw.githubusercontent.com/Demianenko/AutoCourse/master/src/DataMulti";
+    private static String addressDev = "https://raw.githubusercontent.com/Demianenko/AutoCourse/master/src/DataDev";
+
     @DataProvider(name = "getDataPlus")
     public static Object[][] getDataPlus() {
         URL URLPlus = null;
@@ -28,6 +31,26 @@ public class CalcTestData {
         URL URLPlus = null;
         try {
             URLPlus = new URL(addressMinus);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        return setData(pareData(getDataFromSite(URLPlus)));
+    }
+    @DataProvider(name = "getDataMulti")
+    public static Object[][] getDataMulti() {
+        URL URLPlus = null;
+        try {
+            URLPlus = new URL(addressMulti);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        return setData(pareData(getDataFromSite(URLPlus)));
+    }
+    @DataProvider(name = "getDataDev")
+    public static Object[][] getDataDev() {
+        URL URLPlus = null;
+        try {
+            URLPlus = new URL(addressDev);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
@@ -68,7 +91,7 @@ public class CalcTestData {
         Object[][] data = new Object[arrList.size()][arrList.get(0).length];
         for (int i = 0; i < arrList.size(); i++) {
             for (int j = 0; j < arrList.get(i).length; j++ ) {
-                data[i][j] = arrList.get(i)[j];
+                data[i][j] = Double.parseDouble(arrList.get(i)[j]);
             }
         }
         return data;

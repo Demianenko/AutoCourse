@@ -25,36 +25,36 @@ public class CalcTestData {
         }
         return setData(pareData(getDataFromSite(URLPlus)));
     }
-    // Как избежать дублирования кода?
+    // Как избежать дублирования кода в остальных DataProvider?
     @DataProvider(name = "getDataMinus")
     public static Object[][] getDataMinus() {
-        URL URLPlus = null;
+        URL url = null;
         try {
-            URLPlus = new URL(addressMinus);
+            url = new URL(addressMinus);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        return setData(pareData(getDataFromSite(URLPlus)));
+        return setData(pareData(getDataFromSite(url)));
     }
     @DataProvider(name = "getDataMulti")
     public static Object[][] getDataMulti() {
-        URL URLPlus = null;
+        URL url = null;
         try {
-            URLPlus = new URL(addressMulti);
+            url = new URL(addressMulti);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        return setData(pareData(getDataFromSite(URLPlus)));
+        return setData(pareData(getDataFromSite(url)));
     }
     @DataProvider(name = "getDataDev")
     public static Object[][] getDataDev() {
-        URL URLPlus = null;
+        URL url = null;
         try {
-            URLPlus = new URL(addressDev);
+            url = new URL(addressDev);
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-        return setData(pareData(getDataFromSite(URLPlus)));
+        return setData(pareData(getDataFromSite(url)));
     }
 
     private static ArrayList<String> getDataFromSite(URL address) {

@@ -3,14 +3,20 @@
 
 <suite name="Smoke test">
     <test name="Test orders" parallel="methods" thread-count="2">
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <exclude name="p3"/>
+            </run>
+        </groups>
         <classes>
             <class name="Four.OrderTEst">
                 <methods>
                 </methods>
             </class>
             <class name="Four.HomeWork.CalcTest">
-
             </class>
+
             <!--<class name="Four.DataProviderTest">-->
             <!--</class>-->
         </classes>

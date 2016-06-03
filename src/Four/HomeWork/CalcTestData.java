@@ -25,7 +25,7 @@ public class CalcTestData {
         }
         return setData(pareData(getDataFromSite(URLPlus)));
     }
-
+    // Как избежать дублирования кода?
     @DataProvider(name = "getDataMinus")
     public static Object[][] getDataMinus() {
         URL URLPlus = null;
@@ -96,5 +96,4 @@ public class CalcTestData {
         }
         return data;
     }
-
 }

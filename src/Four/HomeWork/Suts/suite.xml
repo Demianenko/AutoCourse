@@ -6,8 +6,10 @@
         <classes>
             <class name="Four.OrderTEst">
                 <methods>
-
                 </methods>
+            </class>
+            <class name="Four.HomeWork.CalcTest">
+
             </class>
             <!--<class name="Four.DataProviderTest">-->
             <!--</class>-->

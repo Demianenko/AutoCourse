@@ -8,27 +8,27 @@ import org.testng.annotations.Test;
  */
 public class OrderTEst {
 
-    @Test(description = "Test to test 1", enabled = true)
+    @Test(description = "Test to test 1", enabled = true, groups = {"p2","smoke"})
     public void test1() {
         System.out.println("Test # 1");
     }
 
-    @Test(description = "Test to test 2" , enabled = true)
+    @Test(description = "Test to test 2" , enabled = true, groups = {"p3","smoke"})
     public void test2()  {
         System.out.println("Test # 2");
     }
 
-    @Test(description = "Test to test 3", enabled = true)
+    @Test(description = "Test to test 3", enabled = true, groups = {"p3"})
     public void test3() {
         System.out.println("Test # 3");
     }
 
-    @Test(description = "Test to test 4", enabled = true)
+    @Test(description = "Test to test 4", enabled = true, groups = {"p3"})
     public void test4() {
         System.out.println("Test # 4");
     }
 
-    @Test(description = "Test to test 5", enabled = true)
+    @Test(description = "Test to test 5", enabled = true, groups = {"p3"})
     public void test5(){
         System.out.println("Test # 5");
     }

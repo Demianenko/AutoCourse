@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Smoke test">
-    <test name="Test orders" parallel="methods" thread-count="2">
+    <test name="Test first" parallel="methods" thread-count="2">
         <groups>
             <run>
                 <include name="smoke"/>
@@ -19,6 +19,14 @@
 
             <!--<class name="Four.DataProviderTest">-->
             <!--</class>-->
+        </classes>
+    </test>
+
+    <test name="Test second">
+        <classes>
+            <class name="Four.HomeWork.CalcTest">
+
+            </class>
         </classes>
     </test>
     </suite>

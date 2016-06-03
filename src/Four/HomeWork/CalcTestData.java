@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class CalcTestData {
     private static String addressPlus = "https://raw.githubusercontent.com/Demianenko/AutoCourse/master/src/DataPlus";
-    private static String addressMinus = "https://raw.githubusercontent.com/Demianenko/AutoCourse/master/src/DataPlus";
+    private static String addressMinus = "https://raw.githubusercontent.com/Demianenko/AutoCourse/master/src/DataMinus";
     private static String addressMulti = "https://raw.githubusercontent.com/Demianenko/AutoCourse/master/src/DataMulti";
     private static String addressDev = "https://raw.githubusercontent.com/Demianenko/AutoCourse/master/src/DataDev";
 
